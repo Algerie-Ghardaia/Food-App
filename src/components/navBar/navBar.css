@@ -1,0 +1,133 @@
+.navBar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navBar .logo {
+  width: 140px;
+  align-items: start;
+  background-color: #2E429A;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  color: #49557e;
+  font-size: 19px;
+}
+
+.navBar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navBar button {
+  background-color: transparent;
+  font-size: 16px;
+  color: #49557e;
+  border: solid 1px #e66e1a;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.navBar button:hover {
+  background-color: #e66e1a;
+  color: aliceblue;
+  transition: 0.3s;
+}
+.navBar li:hover {
+  color: #da2865;
+}
+.navBar li {
+  padding-bottom: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.active {
+  border-bottom: 2px solid #506ed0;
+  color: #da2865;
+  transition: 0.3s;
+}
+.navBar-search-icon {
+  position: relative;
+  cursor: pointer;
+}
+.navBar-search-icon .dot {
+  position: absolute;
+  min-width: 18px;
+  min-height: 14px;
+  background-color: tomato;
+  border-radius: 7px;
+  top: -8px;
+  right: -19px;
+  padding: 2px;
+}
+.dot {
+  text-align: center;
+  font-size: 10px;
+  color: white !important;
+  font-weight: 500;
+}
+.non{
+  display: none;
+}
+@media (max-width: 1090px) {
+  .navBar .logo {
+    width: 80px;
+    padding: 10px;
+    margin-top: -10px;
+  }
+  .navbar-menu {
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 17px;
+  }
+  .navBar-right {
+    gap: 30px;
+  }
+  .navBar-right img {
+    width: 22px;
+  }
+  .navBar button {
+    padding: 8px 22px;
+  }
+}
+@media (max-width: 900px) {
+  .navBar .logo {
+    width: 70px;
+    padding: 10px;
+    margin-top: -10px;
+  }
+  .navbar-menu {
+    gap: 15px;
+    font-size: 16px;
+  }
+  .navBar-right {
+    gap: 30px;
+  }
+  .navBar-right img {
+    width: 20px;
+  }
+  .navBar button {
+    padding: 7px 15px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 790px) {
+  .navBar .logo {
+    width: 100px;
+  }
+  .navbar-menu {
+    display: none ;
+  }
+  .navBar-right {
+    margin: 0 auto;
+  }
+}
